@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(12, 12, 11);
+    color: white;
+
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    margin-top: 10px;
+    color: rgb(255, 0, 149);
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    text-indent: 100px;
+    background-image: url(rainbow.gif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    border: 2px solid rgb(255, 253, 253);
+    border-radius: 10px;
+    align-content: space-between;
+    margin: 20px;
+    
+}
+img{
+    display: block;
+    position:relative;
+    margin: 5px;
+    width: 500px; 
+    border: 2px solid red;
+    border-radius: 50px;
+   
+}
+
+
+
+#b,#c{
+    text-align: justify;
+    font-size: 20px;
+    background-color: white;
+    color: transparent;
+    border: 2px solid;
+    border-radius: 10%;
+    margin-top: auto;
+    
+}
+
+
+@media screen and (min-width:500px) {
+    body{
+        background-color: white;
+    }
+    .parent{
+        display:block;
+        border: none;
+    }
+    img{
+        width: 440px;
+        margin: 0px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    #a,#b,#c{
+        color: black;
+        border-style: none;
+    }
+    #a{
+        text-align: justify;
+        padding: 0 25px;
+        margin-top: auto;
+    }
+    h1{
+        text-transform: uppercase;
+    }
+  
+}
+@media screen and (min-width:550px) {
+    body{
+        background-color:rgb(193, 10, 10);
+    }
+    #b{
+        order: 1;
+    }
+    #c{
+        order: 2;
+    }
+    #d{
+        order: 0;
+    }
+    .parent{
+        display:flex;
+        flex-direction: column;
+        border: none;
+    }
+    img{
+        left: 50%;
+        transform: translate(-50%);
+        width: 520px;
+    }
+    h1{
+        color: rgb(252, 252, 254);
+    }
+   
+      
+}
+@media screen and (min-width:750px) {
+  body{
+    background-color: rgb(220, 248, 9);
+  }
+  img{
+    width: 720px;
+  }
+  h1{
+    color: red;
+  }
+    
+}
+@media screen and (min-width:1000px) {
+    body{
+        background-color: rgb(8, 8, 8);
+    }
+    .parent{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: 5px solid ;
+        align-content: space-between;
+        
+    }
+    
+    img{
+        left:0%;
+        width: 400px;
+        transform: translate(0%);
+        text-align: auto;
+        position: relative;
+        border: none;
+    }
+    #b{
+        order: 1;
+        color: transparent;
+    }
+    #c{
+        order: 3;
+        color: transparent;
+    }
+    #d{
+        order: 2;
+    }
+    #a{
+        color: transparent;
+    }
+}
